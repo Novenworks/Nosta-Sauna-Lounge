@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { background: #100d0b; color: #f3ebe1; }
+::selection { background: #c19662; color: #100d0b; }
+.focus-ring:focus-visible { outline: 2px solid #d4b48a; outline-offset: 3px; }
