@@ -122,18 +122,17 @@ export default function HomePage() {
         <div>
           <p className="text-[11px] uppercase tracking-[0.28em] text-ember-300">Member hospitality</p>
           <h2 className="mt-3 font-display text-4xl text-ember-50 md:text-5xl">The room remembers you.</h2>
-          <ul className="mt-8 space-y-3 text-sm text-ember-100/80">
+          <ul className="mt-8 space-y-3 text-[15px] leading-relaxed text-ember-100/85">
             {[
               "Personalized room setup",
               "Priority room selection",
-              "Custom aromatherapy",
-              "Complimentary oils and ice crystals",
+              "Custom aromatherapy — oils and ice crystals included",
               "Slipper service",
               "Guest pass for a first-time guest",
               "20% off drinks",
               "Family discount — $10 monthly autopay when a family member joins",
               "Concierge service",
-              "Discounted additional sessions",
+              "Referral bonus — up to $55 off when a friend joins",
             ].map((item) => (
               <li key={item} className="border-b border-white/10 pb-3">{item}</li>
             ))}
@@ -145,19 +144,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="packages" className="bg-soot-800 px-5 py-20 md:px-8">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="font-display text-4xl text-ember-50">Bring someone.</h2>
-          <p className="mt-3 max-w-lg text-sm text-ember-100/70">Packages never expire and are fully transferable. No member perks.</p>
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            {[["5 sessions", "$184"], ["10 sessions", "$349"], ["20 sessions", "$549"]].map(([n, p]) => (
-              <article key={n} className="border border-ember-200/20 p-6">
-                <p className="text-sm uppercase tracking-[0.16em] text-ember-300">{n}</p>
-                <p className="mt-2 font-display text-4xl text-ember-50">{p}</p>
-              </article>
-            ))}
+      <section id="addons" className="bg-soot-800 px-5 py-16 md:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 className="font-display text-3xl text-ember-50 md:text-4xl">Scent, if you want it.</h2>
+            <p className="mt-3 max-w-lg text-[15px] text-ember-100/75">
+              Essential oils $3. Finnish menthol ice crystals $5. Complimentary for members, intro guests, and the unlimited week.
+            </p>
           </div>
-          <p className="mt-8 text-sm text-ember-100/60">Add-ons: essential oils $3 · Finnish menthol ice crystals $5</p>
+          <a href={BOOK} className="focus-ring text-sm uppercase tracking-[0.16em] text-ember-200">
+            Book a session →
+          </a>
         </div>
       </section>
 
@@ -183,7 +180,7 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-2">
             <a href="mailto:contact@nostasauna.com" className="focus-ring hover:text-ember-200">contact@nostasauna.com</a>
-            <a href="https://nostasauna.com/" className="focus-ring hover:text-ember-200">Current site</a>
+            <a href="https://www.instagram.com/nostasauna/" className="focus-ring hover:text-ember-200">Instagram</a>
             <a href={GIFT} className="focus-ring hover:text-ember-200">Gift cards</a>
           </div>
           <p className="max-w-xs text-xs">Speculative redesign by Novenworks. Not an official Nosta website.</p>
