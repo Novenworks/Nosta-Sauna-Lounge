@@ -183,7 +183,7 @@ export default function HomePage() {
             <a href="https://www.instagram.com/nostasauna/" className="focus-ring hover:text-ember-200">Instagram</a>
             <a href={GIFT} className="focus-ring hover:text-ember-200">Gift cards</a>
           </div>
-          <p className="max-w-xs text-xs">Speculative redesign by Novenworks. Not an official Nosta website.</p>
+          <p className="max-w-xs text-xs">© {new Date().getFullYear()} Nosta Sauna Lounge.</p>
         </div>
       </footer>
     </main>
