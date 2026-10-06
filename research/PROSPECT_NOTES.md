@@ -9,8 +9,8 @@
 - Gift cards: https://clients.mangomint.com/gift-cards/321625
 - Instagram: https://www.instagram.com/nostasauna/
 - Positioning: Mission Viejo’s private sauna ritual.
-- Pricing verified 2026-09-08 from nostasauna.com/pricing: Intro $30, week $79, single $45, Flow $119, Pure $169, Circle $209. Oils $3, crystals $5. 5/10/20 session packages are not listed on the current official pricing page.
+- Pricing re-verified 2026-10-06 from nostasauna.com/pricing: Intro $30, week $79, single $45, Flow $119, Pure $169, Circle $209. Oils $3, crystals $5. Packages 5/10/20 sessions ($184/$349/$549) now ARE listed on the official page (the demo does not show them).
 - Membership: 2-month minimum, monthly auto-renew, Flow/Pure 90-day rollover.
 - Current site is mature; this is a premium conceptual redesign.
-- Assets: public timber/sauna/stone/oil photography (not first-party Nosta interiors).
+- Assets: demo photos are first-party images published on nostasauna.com (resized into public/assets).
 - No invented perks, staff, awards, or reviews.
