@@ -19,7 +19,7 @@ const STATUS_FLAGS = [
   "Private route — noindex + robots disallow",
   "Concept deployed & live",
   "Not yet contacted",
-  "DEMO USES PLACEHOLDER PHOTOS",
+  "Photos: Nosta's own, from nostasauna.com",
 ];
 
 const SNAPSHOT: [string, string, string?][] = [
@@ -27,12 +27,12 @@ const SNAPSHOT: [string, string, string?][] = [
   ["Market", "Mission Viejo, CA", "26012 Marguerite Pkwy, Ste C, Mission Viejo, CA 92692"],
   ["Equipment", "Helo heaters, 210 lbs vulcanite stones", "The proof it is a traditional sauna, not an infrared booth"],
   ["Phone", PHONE, "Mon–Fri 8 AM–8 PM · Sat–Sun 9 AM–7 PM"],
-  ["Email", EMAIL, "From this repo's research — confirm it is monitored"],
+  ["Email", EMAIL, "Published on nostasauna.com (footer/contact) — checked 2026-10-06"],
   ["Booking & gift cards", "Mangomint", "Both run through the same account — do not pitch her software"],
   ["Deployed concept", "nosta-sauna-lounge-demo.vercel.app", "Verified live before this dossier was written"],
-  ["Recipient", "Unknown", "No owner or manager name appears anywhere in this repo"],
+  ["Recipient", "Not named", "No owner or manager name found on the official site — address the team generically"],
   ["Current site", "Mature", "This repo's own research says so — see guardrail 2"],
-  ["Not verified since 2026-09-08", "All pricing and membership terms", "Six prices plus oils and crystals — re-verify before she clicks"],
+  ["Pricing", "Re-verified 2026-10-06", "Intro $30, week $79, single $45, Flow $119, Pure $169, Circle $209, oils $3, crystals $5 match nostasauna.com/pricing"],
 ];
 
 const OBSERVATIONS = [
@@ -51,11 +51,7 @@ const OBSERVATIONS = [
   {
     title: "The Finnish specifics are not what a first-time visitor meets first",
     body: "Helo heaters, 210 pounds of vulcanite stones, löyly — these are the proof this is a traditional sauna rather than an infrared booth, and they sit deeper in the page than that.",
-  },
-  {
-    title: "Nothing sits between a single session and a membership",
-    body: "Session packages are not on the official pricing page, so the ladder goes $45 single straight to a $119/month commitment with no rung in between.",
-  },
+  }
 ];
 
 const UPGRADES = [
@@ -114,32 +110,28 @@ const HOOKS = [
 
 const GUARDRAILS = [
   {
-    rule: "Say in the first email that the images are placeholders.",
-    detail: "The concept uses public timber, sauna and stone photography — not Nosta's own interiors, which could not be sourced. If she opens the link expecting her space and sees someone else's, the credibility is gone in two seconds. Disclose it before she clicks, and point her at the structure instead.",
+    rule: "Be clear which photos are in the demo.",
+    detail: "The demo uses photographs published on nostasauna.com (room, bucket, slippers, hallway). Say so, and offer to swap or remove any she prefers. Do not describe them as new photography.",
   },
   {
     rule: "Never claim the current site is bad, dated, or broken.",
-    detail: "This repo's own research says the site is mature. This is a structure and hierarchy argument, not a rescue. Open on that footing or do not open at all — she will know immediately if you are pretending otherwise.",
+    detail: "The current site is mature. This is a structure and hierarchy argument, not a rescue.",
   },
   {
     rule: "Never make a health claim about sauna use.",
-    detail: "No detox, cardiovascular, immune, recovery, sleep, longevity, calorie-burn, inflammation or skin claims. Sauna benefit marketing is heavily overclaimed across the industry and none of it is ours to assert on her behalf.",
+    detail: "No detox, cardiovascular, immune, recovery, sleep, longevity, calorie-burn, inflammation or skin claims.",
   },
   {
     rule: "Never advise on heat, session length, hydration, or who should or should not use a sauna.",
-    detail: "That is safety guidance, not design. It is also the fastest way to create liability for a business you do not work for.",
+    detail: "That is safety guidance, not design.",
   },
   {
     rule: "Never state, change, or negotiate prices or membership terms.",
-    detail: "The figures on the concept were verified on one date and not since. See verification item 2.",
-  },
-  {
-    rule: "Never restate the auto-renew, minimum term, or rollover as if confirming them on her behalf.",
-    detail: "Point to her own page. The concept surfaces those terms; the outreach does not repeat them as fact.",
+    detail: "Prices on the demo match nostasauna.com/pricing as of 2026-10-06. Point to her page; do not restate terms as confirmed on her behalf. The pricing page now also lists 5/10/20-session packages ($184/$349/$549) that the demo does not show.",
   },
   {
     rule: "Never invent perks, staff, awards, reviews, or a founder story.",
-    detail: "This repo's research file says so explicitly, and it stands. Nothing about who runs Nosta has been verified.",
+    detail: "Nothing about who runs Nosta has been verified.",
   },
   {
     rule: "Never claim improved SEO, bookings, traffic, or revenue.",
@@ -147,126 +139,114 @@ const GUARDRAILS = [
   },
   {
     rule: "Never pitch her booking or gift-card software.",
-    detail: "Both already run through Mangomint. Suggesting a replacement says you did not look.",
+    detail: "Both already run through Mangomint. The demo keeps using her existing links.",
   },
   {
-    rule: "Never describe Nosta as competing with, or better than, infrared studios or other local spas.",
-    detail: "The traditional-sauna distinction is a fact about the equipment, not a ranking. State the fact; do not draw the comparison for her.",
+    rule: "Never promise a timeline, price, support period, or outcome.",
+    detail: "The package is described by what is included. Pricing is only discussed after she asks for the breakdown.",
   },
   {
-    rule: "Never imply Novenworks was hired or commissioned, or present this as client work.",
-    detail: "Say plainly in the first email that nobody asked for it.",
-  },
-  {
-    rule: "Never claim ownership of her brand, or imply the placeholder photography is hers.",
-    detail: "The concept is a private, non-indexed demo built with stock imagery.",
+    rule: "Never imply Novenworks was hired or commissioned.",
+    detail: "Say plainly that nobody asked for it.",
   },
 ];
 
 const SUBJECT_LINES = [
-  "A website concept for Nosta — placeholder photos, real structure",
+  "A homepage concept for Nosta that leads with the $30 first visit",
   "Where the $30 first visit sits on nostasauna.com",
   "Speculative redesign concept for Nosta Sauna Lounge",
 ];
 
 const COLD_EMAIL = `Hi there,
 
-Two things before you click anything. Your current site is in good shape — this isn't a rescue. And the photos in what I built are placeholders; I couldn't source your own interiors, so they're stock timber and stone. What's worth looking at is the structure, not the images.
+I looked at the pricing page on nostasauna.com. The $30 first visit is what brings a new guest in, and on that page it sits at the same weight as five other prices, with per-person pricing and the membership terms further down.
 
-The $30 first visit is your whole acquisition offer, and on the pricing page it sits alongside five other numbers. I rebuilt the site with it leading, with per-person pricing said out loud, and the membership terms on the cards instead of underneath them.
+I built a homepage concept that puts the $30 first visit at the top, says per-person pricing next to the prices, puts the membership terms on the cards, and moves the Helo heaters and löyly forward. Every booking button still opens your existing Mangomint link. It uses photos from your own site, and nobody asked me to build it: ${DEMO_URL}
 
-Here it is: ${DEMO_URL}
+If you like it, the done-for-you package covers the copy, the build, mobile polish, connecting your existing Mangomint booking, technical setup, and launch. I handle the work. You review and approve.
 
-Nobody asked me to build this. If it's useful, reply and I'll walk you through the reasoning.
+Want me to send over the full breakdown of what you get and what it costs?
 
-Vince
+Vincent
 Novenworks`;
 
 const FOLLOW_UP_ONE = `Hi there,
 
-One detail I should add: the Helo heaters and the 210 pounds of vulcanite stones are the thing that separates you from an infrared booth, and in the concept they sit near the top rather than deep in the page. That was the other change worth making.
+One more detail on the concept I sent: the Helo heaters and the vulcanite stones are what set Nosta apart from an infrared studio, and in the demo they sit near the top instead of deep in the page.
 
-Concept again: ${DEMO_URL}
+Concept: ${DEMO_URL}
 
-If it isn't for you, tell me and I'll close the file.
+I handle the work. You review and approve.
 
-Vince`;
+Want me to send over the full breakdown of what you get and what it costs?
+
+Vincent
+Novenworks`;
 
 const FOLLOW_UP_TWO = `Hi there,
 
-Last one from me on this. The concept stays up at ${DEMO_URL} either way, and you're welcome to take the pricing layout to whoever handles your site.
+Last note from me. The concept stays up at ${DEMO_URL}, and you are welcome to take the pricing layout to whoever handles your site.
 
-If the timing changes later, I'm easy to find.
+Want me to send over the full breakdown of what you get and what it costs?
 
-Vince`;
+Vincent
+Novenworks`;
 
-const PHONE_OPENING = `"Hi — Vince calling, Novenworks. This isn't a sales call. I rebuilt the Nosta site as a concept on my own time and emailed the link over. Your site's in good shape — this was really about where the $30 first visit sits on the page. I wanted to check the email reached you. Did you see it?"`;
+const PHONE_OPENING = `"Hi, this is Vincent with Novenworks. I built a homepage concept for Nosta on my own time and emailed the link. I wanted to check the email reached you. Did you see it?"`;
 
 const PHONE_BRANCHES: [string, string][] = [
   [
     "If she hasn't seen it",
-    '"No problem — it’s one link, nothing to sign up for. One thing to know before you open it: the photos are placeholders, not your rooms. I couldn’t source your interiors. It’s the layout that’s worth a look."',
+    '"No problem, it is one link and nothing to sign up for. It puts the $30 first visit at the top and keeps your Mangomint booking links."',
   ],
   [
-    "If she says the photos aren't hers",
-    '"They’re not, and that’s on me for not making it louder — I couldn’t get your interiors, so they’re stock. If you send me a few of your own I’ll swap them in today. The structure is the part I’d actually defend."',
+    "If she asks about the photos",
+    '"They are photos from your own website. If you would rather use different ones, or none, that is an easy change."',
   ],
   [
     'If she says "the site is fine"',
-    '"It genuinely is — I said so in the email and I meant it. The only thing I’d argue is that the $30 first visit is doing all the work of getting someone in the door, and right now it sits level with five other prices. If that’s not a problem worth solving, that’s a fair answer."',
+    '"It is in good shape. This is only about where the $30 first visit sits on the page. If that is not a problem worth solving, that is a fair answer."',
   ],
   [
     "If she asks what you changed",
-    '"Order, not content. The $30 intro leads. Per-person pricing said next to the prices instead of once at the bottom. Membership terms on the cards. Your Helo heaters and the stones near the top. Booking still goes to your Mangomint link."',
+    '"Order, not content. The $30 intro leads, per-person pricing sits next to the prices, membership terms are on the cards, and the heaters and stones are near the top. Booking still goes to your Mangomint link."',
   ],
   [
-    "If she likes it",
-    '"Good — then the useful next step is going through it together so you can tell me what’s wrong with it. What works around your hours?"',
+    "If she is interested",
+    '"I can send over the full breakdown of what you get and what it costs. What email is best?"',
   ],
   [
     "If she isn't interested",
-    '"Understood — I’ll leave it there. The link stays up if you ever want it. Thanks for taking the call."',
+    '"Understood, I will leave it there. The link stays up if you ever want it."',
   ],
 ];
 
-const VOICEMAIL = `"Hi — Vince with Novenworks. I rebuilt the Nosta Sauna Lounge site as a concept on my own time and emailed you the link. Your site's in good shape; this was mostly about giving the $30 first visit the top of the page. The photos in it are placeholders, not yours. Nothing to buy — reach me back on this number. Thanks."`;
+const VOICEMAIL = `"Hi, this is Vincent with Novenworks. I built a homepage concept for Nosta Sauna Lounge and emailed you the link. Nothing to buy. You can reach me back on this number. Thanks."`;
 
 const VERIFY_BEFORE_SENDING: [string, string][] = [
   [
-    "Disclose the placeholder imagery before she clicks",
-    "The concept uses public timber, sauna and stone photography rather than Nosta's interiors. The cold email, the voicemail and two phone branches all say so up front. Do not remove that disclosure to make the email shorter — it is the difference between a concept and a bait-and-switch.",
+    "Channel",
+    `Email ${EMAIL} is published on the official site (checked 2026-10-06). Phone ${PHONE} also published. No owner or manager name is public, so open generically.`,
   ],
   [
     "Pricing on the concept",
-    "Intro, week pass, single session, and the three membership tiers, plus oils and crystals, were verified from the official pricing page on 2026-09-08 and not since. Re-verify every figure before she opens the link.",
-  ],
-  [
-    "Membership terms",
-    "Two-month minimum, monthly auto-renew, 90-day rollover on Flow and Pure — same source, same date, same caveat. The concept surfaces these prominently, so being wrong about them is worse here than it would be in fine print.",
-  ],
-  [
-    "The recipient",
-    "No owner or manager name appears anywhere in this repo. The copy opens without one deliberately. Find a name, or open by asking who handles the website.",
-  ],
-  [
-    "Email address",
-    `Confirm ${EMAIL} is monitored before relying on it.`,
-  ],
-  [
-    "Phone and hours",
-    `Confirm ${PHONE} reaches the lounge. Published hours are Mon–Fri 8 AM–8 PM and Sat–Sun 9 AM–7 PM; call inside them and expect whoever answers to be with a guest.`,
-  ],
-  [
-    "Mangomint booking and gift-card links",
-    "Confirm both destinations still resolve. The “nothing about your booking changes” argument depends on it.",
+    "Re-verified against nostasauna.com/pricing on 2026-10-06 (intro, week, single, three memberships, oils, crystals). Re-check if more than a few weeks pass before sending.",
   ],
   [
     "Session packages",
-    "This repo's research notes that 5, 10 and 20-session packages are NOT on the official pricing page. Confirm whether they exist at all before mentioning them — observation 5 assumes they do not.",
+    "The official pricing page now lists 5, 10 and 20-session packages ($184, $349, $549). The concept does not show them. Do not claim there is nothing between single sessions and memberships.",
   ],
   [
-    "Repo note, not outreach",
-    "This repository had no robots.ts and no sitemap.ts. /outreach was protected by page-level noindex alone; a robots.ts disallowing /outreach was added alongside this dossier.",
+    "Photos",
+    "Demo images are photographs published on nostasauna.com. Offer to swap or remove them.",
+  ],
+  [
+    "Mangomint booking and gift-card links",
+    "Confirm both destinations still resolve before sending.",
+  ],
+  [
+    "Hours",
+    "Mon–Fri 8 AM–8 PM, Sat–Sun 9 AM–7 PM per the official pricing page, 2026-10-06.",
   ],
 ];
 
@@ -291,7 +271,7 @@ export default function OutreachPage() {
               <span
                 key={flag}
                 className={`rounded-full border px-3 py-1 text-[11px] font-medium ${
-                  flag.includes("PLACEHOLDER")
+                  flag.startsWith("Photos")
                     ? "border-ember-300 bg-ember-500/20 text-ember-100"
                     : "border-ember-200/20 text-ember-50/60"
                 }`}
@@ -314,13 +294,12 @@ export default function OutreachPage() {
           <h2 className="font-display text-xl">Two things that shape every message here</h2>
           <ol className="mt-3 list-decimal space-y-2.5 pl-5 text-sm leading-relaxed text-ember-50/85">
             <li>
-              <strong>The current site is mature.</strong> This repo&apos;s own research says so. This is a structure
-              and hierarchy argument, not a rescue — and the outreach opens by saying that out loud.
+              <strong>The current site is mature.</strong> This is a structure and hierarchy argument, not a rescue,
+              and the outreach opens by saying so.
             </li>
             <li>
-              <strong>The concept uses placeholder photography.</strong> Public timber, sauna and stone imagery, not
-              Nosta&apos;s interiors, which could not be sourced. Every piece of outreach copy discloses this before
-              she clicks. Do not remove that disclosure.
+              <strong>The concept uses Nosta&apos;s own photos.</strong> They are published on nostasauna.com. Say so,
+              and offer to swap or remove any she prefers.
             </li>
           </ol>
         </section>

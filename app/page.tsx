@@ -8,7 +8,7 @@ export default function HomePage() {
     <main id="top">
       <Header />
       <section className="relative min-h-[92vh] pt-20">
-        <img src="/assets/room-3.jpg" alt="Private timber sauna room with stone heater and löyly bucket" className="absolute inset-0 h-full w-full object-cover" />
+        <img src="/assets/room-3.jpg" alt="Inside a private Nosta sauna room" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-soot-900 via-soot-900/55 to-soot-900/25" />
         <div className="relative mx-auto flex min-h-[92vh] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 md:px-8 md:pb-20">
           <p className="text-[11px] uppercase tracking-[0.28em] text-ember-200">Private sauna · Mission Viejo</p>
@@ -47,7 +47,7 @@ export default function HomePage() {
 
       <section className="bg-soot-800">
         <div className="mx-auto grid max-w-6xl gap-0 md:grid-cols-2">
-          <img src="/assets/room-1.jpg" alt="Cedar benches and stone heater in a private sauna" className="h-full min-h-[320px] w-full object-cover" />
+          <img src="/assets/room-1.jpg" alt="Wooden löyly bucket and eucalyptus on a sauna bench" className="h-full min-h-[320px] w-full object-cover" />
           <div className="flex flex-col justify-center px-5 py-16 md:px-12">
             <p className="text-[11px] uppercase tracking-[0.28em] text-ember-300">How the session feels</p>
             <ol className="mt-8 space-y-8">
@@ -139,8 +139,8 @@ export default function HomePage() {
           </ul>
         </div>
         <div className="grid gap-4">
-          <img src="/assets/stones.jpg" alt="Hot sauna stones releasing steam" className="h-64 w-full object-cover md:h-80" />
-          <img src="/assets/oils.jpg" alt="Amber essential oil bottles for aromatherapy" className="h-56 w-full object-cover" />
+          <img src="/assets/stones.jpg" alt="Sauna room entry with towel, shelf and löyly bucket" className="h-64 w-full object-cover md:h-80" />
+          <img src="/assets/oils.jpg" alt="Nosta slippers in a sauna room" className="h-56 w-full object-cover" />
         </div>
       </section>
 
@@ -159,7 +159,7 @@ export default function HomePage() {
       </section>
 
       <section className="relative overflow-hidden">
-        <img src="/assets/room-2.jpg" alt="Warm backlit timber sauna benches" className="absolute inset-0 h-full w-full object-cover" />
+        <img src="/assets/room-2.jpg" alt="Hallway of private sauna rooms at Nosta" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-soot-900/70" />
         <div className="relative mx-auto max-w-6xl px-5 py-28 md:px-8">
           <h2 className="font-display text-4xl text-ember-50 md:text-6xl">Make heat part of the week.</h2>
