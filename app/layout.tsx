@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Nosta Sauna Lounge — Mission Viejo Private Sauna Ritual",
   description:
     "A private traditional Finnish sauna experience in Mission Viejo. Shape the heat, steam, scent, and quiet. First session $30.",
+  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
